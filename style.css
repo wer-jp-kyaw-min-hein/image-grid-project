@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to, top, rgba(0,0,0,0.7), transparent);
+}
+
+.caption h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cpation p {
+    font-size: 0.9em;
+}
+
+/* Custom size */
+.large {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.small {
+    grid-column: span 2;
+}
+
+.office, .office2 {
+    grid-column: span 2;
+}
+
+.automobile, .mountain-road, .cliff, .bike,
+.chairs, .city, .skyline, .lake, .blur, .cliff2 {
+    grid-column: span 1;
+}
+
+/* Background images - can change to your own images later */
+.mountains {
+    background-image: url('images/mountain.jpg');
+}
+
+.automobile {
+    background-image: url('images/automobile.jpg');
+}
+
+.mountain-road {
+    background-image: url('images/mountain-road.jpg');
+}
+
+.cliff {
+    background-image: url('images/cliff.jpg');
+}
+
+.bike {
+    background-image: url('images/bike.jpg');
+}
+
+.office {
+    background-image: url('images/office.jpg');
+}
+
+.office2 {
+    background-image: url('images/office2.jpg');
+}
+
+.chairs {
+    background-image: url('images/chairs.jpg');
+}
+
+.city {
+    background-image: url('images/city.jpg');
+}
+
+.skyline {
+    background-image: url('images/skyline.jpg');
+}
+
+.blur {
+    background-image: url('images/blur.jpg');
+}
+
+.cliff2 {
+    background-image: url('images/rocky-mountain.jpg');
+}
